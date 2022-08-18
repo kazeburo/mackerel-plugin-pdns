@@ -62,7 +62,7 @@ func (p *Plugin) GraphDefinition() map[string]mp.Graphs {
 			Label: labelPrefix + ": Packet Cache",
 			Unit:  "integer",
 			Metrics: []mp.Metrics{
-				{Name: "packetcache-hit", Label: "Hits", Diff: true},
+				{Name: "packetcache-hit", Label: "Hits", Stacked: true, Diff: true},
 				{Name: "packetcache-miss", Label: "Misses", Stacked: true, Diff: true},
 			},
 		},
@@ -70,7 +70,7 @@ func (p *Plugin) GraphDefinition() map[string]mp.Graphs {
 			Label: labelPrefix + ": Query Cache",
 			Unit:  "integer",
 			Metrics: []mp.Metrics{
-				{Name: "query-cache-hit", Label: "Hits", Diff: true},
+				{Name: "query-cache-hit", Label: "Hits", Stacked: true, Diff: true},
 				{Name: "query-cache-miss", Label: "Misses", Stacked: true, Diff: true},
 			},
 		},
