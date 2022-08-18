@@ -1,5 +1,6 @@
 builds:
   - binary: mackerel-plugin-pdns
+    main: ./cmd/mackerel-plugin-pdns
     goos:
       - linux
     goarch:
