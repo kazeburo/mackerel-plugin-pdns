@@ -102,7 +102,7 @@ func (p *Plugin) GraphDefinition() map[string]mp.Graphs {
 			},
 		},
 		"tcp-connection": {
-			Label: labelPrefix + ": Backend",
+			Label: labelPrefix + ": Connections",
 			Unit:  "integer",
 			Metrics: []mp.Metrics{
 				{Name: "open-tcp-connections", Label: "TCP Connections"},
